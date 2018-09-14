@@ -230,7 +230,7 @@ func (c *Chaoskube) CreateDeleteEvent(victim v1.Pod) error {
 		LastTimestamp:  t,
 		Count:          1,
 		Action:         "Deleted",
-		Type:           "Event",
+		Type:           v1.EventTypeNormal,
 	})
 
 	return err
