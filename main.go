@@ -88,6 +88,7 @@ func main() {
 		"dryRun":             dryRun,
 		"debug":              debug,
 		"metricsAddress":     metricsAddress,
+		"createEvent":        createEvent,
 	}).Debug("reading config")
 
 	log.WithFields(log.Fields{
